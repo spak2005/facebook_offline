@@ -1,20 +1,31 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+  Text,
+  View,
+  StyleSheet,
+  Image,
+  ImageBackground,
+  TextInput,
+  ScrollView,
+} from 'react-native';
 
+// You can import from local files
 export default function App() {
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ScrollView>
+      <View>
+        <Text style={Styles.facebookText}>facebook</Text>
+        <StatusBar/>
+      </View>
+    </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const Styles= StyleSheet.create(
+  {
+facebookText:{
+  fontSize: 60,
+  fontWeight: 'bold',
+  color: 'blue',  
+}
+})
