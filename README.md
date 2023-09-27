@@ -1,2 +1,2 @@
 # facebook_offline
-Obviously the offline version of facebook
+A static clone of the Facebook mobile homepage, developed with React Native
